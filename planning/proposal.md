@@ -14,7 +14,7 @@ Our app will be used for keeping track of a user's projects. The goal of the dat
 
 ## User-Story
 
-Our users will be any person who has found themselves at a loss with project management software. Our app will be easy to interact with and a useful organization tool.
+Our user is someone who is interested in planning projects. They are looking for a smooth, easy way to view, create, edit, and delete their projects in one place. Our user has found themselves at a loss with traditional project management software, which can have unnecessary features that can complicate their project planning. Our app will be easy to interact with and a useful organization tool.
 
 ## Data Structure
 
@@ -38,38 +38,52 @@ Our users will be any person who has found themselves at a loss with project man
 - projectTotalCost: Number (users can estimate the total cost of the project),
 - projectLink: String (users can put a URL to something connected with the project, such as an item on Home Depot's website or the website of a food shelf),
 - projectDescription: String (large text field for users to explain the details of the project),
-- projectSteps: String (large text field for users to write out the distinct steps for the project),
-- Stretch Goal:
-  - projectPriority: Number (optional; users can rank 1-5 how important the project is),
-  - projectDifficulty: Number (optional; users could rank how difficult it might be to complete a project... for example, building a birdhouse might be 1: very easy, but building a functioning sailboat from scratch might be 5: very difficult)
+- projectSteps:  [ String (large text field for users to write out the distinct steps for the project) ],
+- projectPriority: Number (optional; users can rank 1-5 how important the project is),
+- projectDifficulty: Number (optional; users could rank how difficult it might be to complete a project... for example, building a birdhouse might be 1: very easy, but building a functioning sailboat from scratch might be 5: very difficult)
 
 CRUD:
 
 - Seed data consists of 5-10 projects
-- Users can:
+- Users can perform CRUD on projects:
   - GET: View existing projects (by name, location, or cost)
   - POST: Create their own project with a form that has all the necessary fields
   - PUT: Edit existing projects (change all the details from the original form)
   - DELETE: Delete projects (either the seed projects or ones they added)
-    What are people's thoughts on this so far? I'm excited about the different types of projects we can showcase with our seed data! (edited)
+- Users can perform CRUD on users:
+  - GET: View existing users
+  - POST: Create a new user
+  - PUT: Edit an existing user
+  - DELETE: Delete an existing user
 
 ## Wireframes
 
 Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe. Also, define the the React components and the architectural design of your app.
 
-- [add link to your wireframes]()
-- [react architecture](./proposal-images/react-architecture-v1.jpg)
+### Wireframes
+- [Mobile1](https://i.imgur.com/uhRWtyF.jpg)
+- [Mobile2](https://i.imgur.com/7pTOKYi.jpg)
+- [Mobile3](https://i.imgur.com/c3JZ5q0.jpg)
+- [Tablet1](https://i.imgur.com/ZgDtInC.jpg)
+- [Tablet2](https://i.imgur.com/iuMLwTc.jpg)
+- [Tablet3](https://i.imgur.com/Imm42yA.jpg)
+- [Desktop1](https://i.imgur.com/8P5kPHt.jpg)
+- [Desktop2](https://i.imgur.com/AT0PN49.jpg)
+- [Desktop3](https://i.imgur.com/EjffRNg.jpg)
+- [React Architecture](./proposal-images/react-architecture-v1.jpg)
 
 ## MVP
 
 - Develop back-end with current data structure
-- Build routes to interact with data
+- Develop routing of pages for front end
 - Develop front-end functionality with basic CRUD actions
-- Responsiveness
+- Responsive design
 
 ## Post-MVP
 
 - User Authentication
+- Basic animation for click events
+- Use Lighthouse to check accessibility
 
 ## React Components
 
@@ -88,12 +102,20 @@ Upload images of wireframe to cloudinary and add the link here with a descriptio
 
 ## Time Frame
 
-| Component        | Priority | Estimated Time | Time Invetsted | Actual Time |
-| ---------------- | :------: | :------------: | :------------: | :---------: |
-| Adding Form      |    H     |      3hrs      |     3.5hrs     |   3.5hrs    |
-| Working with API |    H     |      3hrs      |     2.5hrs     |   2.5hrs    |
-| Total            |    H     |      6hrs      |      5hrs      |    5hrs     |
+| Component        | Priority | Estimated Time | Actual Time |
+| ---------------- | :------: | :------------: | :------------: |
+| Initial server setup |    H     |      2hrs      |     hrs     |
+| Creating models and controllers |    H     |      3hrs      |     hrs     |
+| Seed data            |    H     |      3hrs      |      hrs      |
+| Nav            |    H     |      3hrs      |      hrs      |
+| Landing/About page           |    H     |      1hrs      |      hrs      |
+| Projects page            |    H     |      1.5hrs      |      hrs      |
+| Users projects page            |    H     |      3hrs      |      hrs      |
+| Individual project page            |    H     |      5hrs      |      hrs      |
+| Team page           |    H     |      hrs      |      3hrs      |
+| Total            |    H     |      24.5hrs      |      hrs      |
 
 ## Additional Libraries
 
 - Axios
+- React Bootstrap
