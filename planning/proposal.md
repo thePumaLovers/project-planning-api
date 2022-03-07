@@ -8,13 +8,29 @@
 - [Front-End Deployed (Nonfunctioning)]()
 - [Back-End Deployed (Nonfunctioning)]()
 
+
+## Project Schedule
+| Day | Deliverable | Status |
+| ------ | :------: | :------------: |
+| 1 | Project Worksheet approved |      Incomplete      |
+| 1 | Create basic back end (connection, models, controllers) | Incomplete |
+| 2           |    Create basic front end (routing pages, placeholder text)   |      Incomplete     |
+| 2            |    Minimal styling and responsive design     |      Incomplete      |
+| 3            |    Main CRUD form on front end     |      Incomplete      |
+| 3            |    Deploy back end, meet MVP     |      Incomplete      |
+| 4            |    User Authentication, animation, accessibility     |      Incomplete      |
+| 5           |    Present     |      Incomplete      |
+
+
 ## Project Description
 
 Our app will be used for keeping track of a user's projects. The goal of the data structure is to let our app fit the mold of many different projects. While user authentication will be a post-mvp, we want users to have a place to store their ideas.
 
+
 ## User-Story
 
 Our user is someone who is interested in planning projects. They are looking for a smooth, easy way to view, create, edit, and delete their projects in one place. Our user has found themselves at a loss with traditional project management software, which can have unnecessary features that can complicate their project planning. Our app will be easy to interact with and a useful organization tool.
+
 
 ## Data Structure
 
@@ -42,25 +58,30 @@ Our user is someone who is interested in planning projects. They are looking for
 - projectPriority: Number (optional; users can rank 1-5 how important the project is),
 - projectDifficulty: Number (optional; users could rank how difficult it might be to complete a project... for example, building a birdhouse might be 1: very easy, but building a functioning sailboat from scratch might be 5: very difficult)
 
-CRUD:
+### Routing Table
 
-- Seed data consists of 5-10 projects
-- Users can perform CRUD on projects:
-  - GET: View existing projects (by name, location, or cost)
-  - POST: Create their own project with a form that has all the necessary fields
-  - PUT: Edit existing projects (change all the details from the original form)
-  - DELETE: Delete projects (either the seed projects or ones they added)
-- Users can perform CRUD on users:
-  - GET: View existing users
-  - POST: Create a new user
-  - PUT: Edit an existing user
-  - DELETE: Delete an existing user
+#### Project Routes
+
+| URL        | HTTP | Action | Description |
+| ---------------- | :------: | :------------: | :------------: |
+| /projects |    GET     |      show      |     show all projects     |
+| / |    POST     |      create      |     create a new project     |
+| /id/:id            |    PUT     |      update      |      update a single project by id      |
+| /id/:id            |    DELETE     |      delete      |      delete a single project by id      |
+
+#### User Routes
+| URL        | HTTP | Action | Description |
+| ---------------- | :------: | :------------: | :------------: |
+| /users |    GET     |      show      |     show all users and their projects     |
+| / |    POST     |      create      |     create a new user     |
+| /id/:id            |    PUT     |      update      |      update a single user by id      |
+| /id/:id            |    DELETE     |      delete      |      delete a single user by id      |
+
 
 ## Wireframes
 
 Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe. Also, define the the React components and the architectural design of your app.
 
-### Wireframes
 - [Mobile1](https://i.imgur.com/uhRWtyF.jpg)
 - [Mobile2](https://i.imgur.com/7pTOKYi.jpg)
 - [Mobile3](https://i.imgur.com/c3JZ5q0.jpg)
@@ -72,6 +93,7 @@ Upload images of wireframe to cloudinary and add the link here with a descriptio
 - [Desktop3](https://i.imgur.com/EjffRNg.jpg)
 - [React Architecture](./proposal-images/react-architecture-v1.jpg)
 
+
 ## MVP
 
 - Develop back-end with current data structure
@@ -79,11 +101,13 @@ Upload images of wireframe to cloudinary and add the link here with a descriptio
 - Develop front-end functionality with basic CRUD actions
 - Responsive design
 
+
 ## Post-MVP
 
 - User Authentication
 - Basic animation for click events
 - Use Lighthouse to check accessibility
+
 
 ## React Components
 
@@ -100,6 +124,7 @@ Upload images of wireframe to cloudinary and add the link here with a descriptio
 | Teams               |                                                                  Stateless, bios                                                                   |
 | Footer              |                                                                     Stateless                                                                      |
 
+
 ## Time Frame
 
 | Component        | Priority | Estimated Time | Actual Time |
@@ -114,6 +139,7 @@ Upload images of wireframe to cloudinary and add the link here with a descriptio
 | Individual project page            |    H     |      5hrs      |      hrs      |
 | Team page           |    H     |      hrs      |      3hrs      |
 | Total            |    H     |      24.5hrs      |      hrs      |
+
 
 ## Additional Libraries
 
