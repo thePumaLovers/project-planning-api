@@ -23,4 +23,7 @@ app.get("/", (req, res) => {
 const groupRouter = require("./controllers/groupRoutes");
 app.use("/groups", groupRouter);
 
+const projectRouter = require('./controllers/projectRoutes')
+app.use('/projects', projectRouter)
+
 app.listen(PORT, () => console.log("Server running on port 4000!"));
