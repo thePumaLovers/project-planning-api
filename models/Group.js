@@ -1,19 +1,20 @@
-//import connection
+// import connection
 const mongoose = require("./../db/connection");
 const Schema = mongoose.Schema;
 
-//schema
+// subDocument  for projects
+const projectSchema = new Schema({
+  projectName: String,
+  projectDescription: String,
+  isCompleted: Boolean,
+});
+
+// schema
 const groupSchema = new Schema({
   displayName: String,
   location: String,
-  projects: [
-    {
-      projectName: String,
-      projectDescription: String,
-      isCompleted: Boolean,
-    },
-  ],
+  projects: [projectSchema],
 });
 
-//export model
+// export model
 module.exports = mongoose.model("Group", groupSchema);
