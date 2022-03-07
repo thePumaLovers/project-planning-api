@@ -75,6 +75,7 @@ Our user is someone who is interested in planning projects. They are looking for
 | /users |    GET     |      show      |     show all users and their projects     |
 | / |    POST     |      create      |     create a new user     |
 | /id/:id            |    PUT     |      update      |      update a single user by id      |
+| /userid/:userid/projectid/:projectid | PUT | update | link project to user |
 | /id/:id            |    DELETE     |      delete      |      delete a single user by id      |
 
 
