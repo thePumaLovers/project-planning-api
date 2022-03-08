@@ -18,6 +18,7 @@ router.post('/groupid/:groupid', async (req, res) => {
     })
 })
 
+// Update project by id
 router.put('/groupid/:groupid/projectid/:projectid', async (req, res) => {
     //Find specific group by id
     const group = await Group.findById(req.params.groupid)
@@ -27,7 +28,6 @@ router.put('/groupid/:groupid/projectid/:projectid', async (req, res) => {
     
     //Find index of selected group
     const index = group.projects.indexOf(project)
-    console.log(index)
 
     //Modify group and save since subdocs don't save unless parent saves
     group.projects.splice(index, 1, req.body)
@@ -38,7 +38,29 @@ router.put('/groupid/:groupid/projectid/:projectid', async (req, res) => {
         status: 200,
         message: 'project edited',
         project: group
-        
+    })
+})
+
+// Delete project by id
+router.delete('/groupid/:groupid/projectid/:projectid', async (req, res) => {
+    //Find specific group by id
+    const group = await Group.findById(req.params.groupid)
+
+    //Find specific project in selected group via id
+    const project = group.projects.id(req.params.projectid)
+    
+    //Find index of selected group
+    const index = group.projects.indexOf(project)
+
+    //Modify group with subdoc deletion and save since subdocs don't save unless parent saves
+    group.projects.splice(index, 1)
+    group.save();
+
+    //Response sent from request
+    res.json({
+        status: 200,
+        message: 'project deleted',
+        project: group
     })
 })
 
