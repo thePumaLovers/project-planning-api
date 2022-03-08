@@ -1,0 +1,77 @@
+[
+    {
+        "displayName": "Ross Fan Club",
+        "location": "Georgia",
+        "projects": [
+            {
+            "projectName": "Backyard Fish Pond",
+            "projectDescription": "A fully-functioning fish pond suitable for koi to elevate the atmosphere of one's backyard.",
+            "isCompleted": false
+        },
+        {
+            "projectName": "Bird Watching",
+            "projectDescription": "Gain mastery of ornithology for use with vision-enhancing devices.",
+            "isCompleted": true
+        }
+    ]
+    },
+    {
+        "displayName": "Tree Huggers United",
+        "location": "Nebraska",
+        "projects": [
+            {
+            "projectName": "Ft. Robinson Tree Re-planting",
+            "projectDescription": "Going through where the wildfires have burnt down the forest and replanting the trees.",
+            "isCompleted": true
+        }
+    ]
+    },
+    {
+        "displayName": "Travel Team",
+        "location": "Minnesota",
+        "projects": [
+            {
+            "projectName": "Visit All State Parks",
+            "projectDescription": "Road trip to visit all state parks in the United States.",
+            "isCompleted": false
+        },
+        {
+            "projectName": "Alaska Dream Vacation",
+            "projectDescription": "Comprehensive trip to Alaska in late Summer to eary Fall for the Alaska State Fair.",
+            "isCompleted": false
+        }
+    ]
+    },
+    {
+        "displayName": "Juan's Humanitarians",
+        "location": "Costa Rica",
+        "projects": [
+            {
+            "projectName": "Food Shelf Volunteering",
+            "projectDescription": "Research local food shelves and volunteer to help stock and facilitate community participation.",
+            "isCompleted": true
+        }
+    ]
+    },
+    {
+        "displayName": "Stack's Full-Stackers",
+        "location": "Remote",
+        "projects": [
+            {
+            "projectName": "Learn Python",
+            "projectDescription": "Develop stronger understanding of the Python programming language.",
+            "isCompleted": false
+        },
+        {
+            "projectName": "Learn MongoDB",
+            "projectDescription": "Discover noSQL database structures through the use of MongoDB",
+            "isCompleted": true
+        },
+        {
+            "projectName": "Learn React",
+            "projectDescription": "Research and implement React for front-end web development (e.g., learn a language that lets you play with HTML without actually touching HTML).",
+            "isCompleted": true
+        }
+    ]
+    }
+]
